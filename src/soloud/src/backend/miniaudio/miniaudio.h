@@ -33932,7 +33932,7 @@ static ma_result ma_device__untrack__coreaudio(ma_device* pDevice)
             Core Audio will have stopped the internal device automatically, but we need explicitly
             stop it at a higher level to ensure miniaudio-specific state is updated for consistency.
             */
-            ma_device_stop(m_pDevice);
+            // ma_device_stop(m_pDevice); 
 
             /*
             Fire the notification after the device has been stopped to ensure it's in the correct
